@@ -1,0 +1,9 @@
+your-repo/
+├── index.html
+├── styles.css
+├── images/
+│   ├── your-photo.jpg
+│   ├── github-icon.png
+│   ├── linkedin-icon.png
+│   └── (other social icons)
+└── README.md
