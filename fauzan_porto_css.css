@@ -22,7 +22,7 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #30363d;
+    border: 5px solid #232a31;
     margin-bottom: 1rem;
 }
 
@@ -52,6 +52,109 @@ p {
 .social-links a:hover {
     color: #58a6ff;
 }
+
+
+/* For Project Cards */
+.portfolio-card {
+            width: 100%;
+            max-width: 350px;
+            background: rgba(60, 59, 61, 0.5);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.404);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            margin: 1.5rem 0 0;
+            max-width: 300px;
+            cursor: pointer;
+            /* Disable unwanted underline on text inside card */
+            text-decoration: none;
+
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-card a {
+            position: relative;
+            z-index: 2;
+        }
+
+        .card-header {
+            position: relative;
+            /* height: 200px; */
+            background: linear-gradient(45deg, #2c1c3d, #0f2f66);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            /* padding: 20px; */
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .title {
+            font-size: 16px;
+            color: #5d0bb6;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .bio {
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            /* margin-bottom: 20px; */
+        }
+
+        .skills-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #f5efef;
+            margin-bottom: 10px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: left;
+        }
+
+        .skill {
+            background: #f0f0f0;
+            color: #333;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
 
 /* Optional: Add GitHub-like grid background */
 body::before {
