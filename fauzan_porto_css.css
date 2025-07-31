@@ -24,15 +24,25 @@ body {
     object-fit: cover;
     border: 5px solid #232a31;
     margin-bottom: 1rem;
+    /* animation: pulse 2s infinite; */
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .profile-img:hover{
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #ffffff;
-    margin-bottom: 1rem;
+    transform: scale(2) translateY(60px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: #58a6ff;
+    /* animation: none; */
+    z-index: 10;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 h1 {
@@ -56,10 +66,12 @@ p {
     color: #c9d1d9;
     font-size: 1.8rem;
     transition: color 0.3s ease;
+    animation: pulse 2s infinite;
 }
 
 .social-links a:hover {
     color: #58a6ff;
+    scale: 1.2;
 }
 
 
