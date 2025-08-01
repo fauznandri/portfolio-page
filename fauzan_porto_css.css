@@ -31,12 +31,16 @@ body {
 
 }
 
-.profile-img:hover{
+.profile-img:hover {
     transform: scale(2) translateY(60px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border-color: #58a6ff;
     /* animation: none; */
     z-index: 10;
+}
+
+.profile-img:hover ~ .social-links a {
+    animation: none;
 }
 
 @keyframes pulse {
